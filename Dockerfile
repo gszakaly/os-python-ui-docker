@@ -12,4 +12,4 @@ COPY static /app/static
 COPY templates /app/templates
 
 ENV FLASK_APP=/app/app.py
-CMD [ "flask", "run", "--host=0.0.0.0" ]
+CMD [ "flask", "run", "--host=0.0.0.0", "--port=8080" ]
